@@ -1,16 +1,6 @@
 from datetime import datetime, timezone, timedelta
 from components.config import config
 
-
-    """
-    Classify temperature into human-readable categories.
-    
-    Args:
-        temp_celsius: Temperature in Celsius
-        
-    Returns:
-        Temperature classification string
-    """
 def classify_temperature(temp_celsius: float) -> str:
     if temp_celsius < config.TEMP_COLD:
         return "cold"
